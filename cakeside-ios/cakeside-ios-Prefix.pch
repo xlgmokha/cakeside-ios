@@ -9,13 +9,27 @@
 #endif
 
 #ifdef __OBJC__
-  #import <UIKit/UIKit.h>
-  #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "MBProgressHUD.h"
+#import "AppDelegate.h"
+#import "TSMessage.h"
+#import "SSKeychain.h"
+#import "UIImageView+AFNetworking.h"
+#import "AFNetworking.h"
 #endif
 
+// URLs
+#define HOST        @"https://staging.cakeside.com"
+#define URL_LOGIN   @"/api/v1/logins"
 
 // KeyChain defs
 #define KEYCHAIN_ACCOUNT                @"cakeside"
 #define KEYCHAIN_USER_NAME              @"KEYCHAIN_USER_NAME"
 #define KEYCHAIN_USER_PASSWORD          @"KEYCHAIN_USER_PASSWORD"
 #define KEYCHAIN_API_TOKEN              @"KEYCHAIN_API_TOKEN"
+
+// Other Settings
+#define HUD_ANIMATION_DURATION 0.4
+#define HUD_ANIMATION_DURATION_LONG 1.0
+#define HUD_ANIMATION_DURATION_EXTRALONG 1.6
