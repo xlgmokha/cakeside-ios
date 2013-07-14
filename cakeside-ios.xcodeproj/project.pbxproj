@@ -100,7 +100,6 @@
 		CDCB344F1793405E00A25F1E = {
 			isa = PBXGroup;
 			children = (
-				CDE67AB1179348EB00B4742C /* Security.framework */,
 				CDCB34611793405E00A25F1E /* cakeside-ios */,
 				CDCB34851793405E00A25F1E /* cakeside-iosTests */,
 				CDCB345A1793405E00A25F1E /* Frameworks */,
@@ -121,6 +120,7 @@
 		CDCB345A1793405E00A25F1E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CDE67AB1179348EB00B4742C /* Security.framework */,
 				CDCB345B1793405E00A25F1E /* UIKit.framework */,
 				CDCB345D1793405E00A25F1E /* Foundation.framework */,
 				CDCB345F1793405E00A25F1E /* CoreGraphics.framework */,
