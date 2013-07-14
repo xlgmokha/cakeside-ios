@@ -12,3 +12,10 @@
   #import <UIKit/UIKit.h>
   #import <Foundation/Foundation.h>
 #endif
+
+
+// KeyChain defs
+#define KEYCHAIN_ACCOUNT                @"cakeside"
+#define KEYCHAIN_USER_NAME              @"KEYCHAIN_USER_NAME"
+#define KEYCHAIN_USER_PASSWORD          @"KEYCHAIN_USER_PASSWORD"
+#define KEYCHAIN_API_TOKEN              @"KEYCHAIN_API_TOKEN"

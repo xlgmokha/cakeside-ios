@@ -24,6 +24,7 @@
 		CDCB348A1793405E00A25F1E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CDCB34881793405E00A25F1E /* InfoPlist.strings */; };
 		CDCB348D1793405E00A25F1E /* cakeside_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCB348C1793405E00A25F1E /* cakeside_iosTests.m */; };
 		CDE67AB0179347D400B4742C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE67AAF179347D400B4742C /* LoginViewController.m */; };
+		CDE67AB2179348EB00B4742C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE67AB1179348EB00B4742C /* Security.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		CDCB348C1793405E00A25F1E /* cakeside_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cakeside_iosTests.m; sourceTree = "<group>"; };
 		CDE67AAE179347D400B4742C /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		CDE67AAF179347D400B4742C /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		CDE67AB1179348EB00B4742C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		CE65D4B28521438085302B5E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -68,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDE67AB2179348EB00B4742C /* Security.framework in Frameworks */,
 				CDCB345C1793405E00A25F1E /* UIKit.framework in Frameworks */,
 				CDCB345E1793405E00A25F1E /* Foundation.framework in Frameworks */,
 				CDCB34601793405E00A25F1E /* CoreGraphics.framework in Frameworks */,
@@ -91,6 +94,7 @@
 		CDCB344F1793405E00A25F1E = {
 			isa = PBXGroup;
 			children = (
+				CDE67AB1179348EB00B4742C /* Security.framework */,
 				CDCB34611793405E00A25F1E /* cakeside-ios */,
 				CDCB34851793405E00A25F1E /* cakeside-iosTests */,
 				CDCB345A1793405E00A25F1E /* Frameworks */,

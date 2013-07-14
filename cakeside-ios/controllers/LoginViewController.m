@@ -7,6 +7,7 @@
 //
 
 #import "LoginViewController.h"
+#import "SSKeychain.h"
 
 @interface LoginViewController ()<UITextFieldDelegate>
 
@@ -29,7 +30,7 @@
 //  self.contentView.$y = 0;
   
   // prepopulate username/password with stored information
-  /*
+
   NSError *error;
   NSString *username = [SSKeychain passwordForService:KEYCHAIN_USER_NAME account:KEYCHAIN_ACCOUNT error:&error];
   if (error) { username = nil; }
@@ -44,7 +45,7 @@
   {
     self.passwordTextBox.text = password;
   }
-  */
+
   
 }
 
