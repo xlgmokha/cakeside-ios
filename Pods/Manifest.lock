@@ -1,10 +1,16 @@
 PODS:
   - AFNetworking (1.3.1)
+  - MBProgressHUD (0.7)
+  - TSMessages (0.9.3)
 
 DEPENDENCIES:
   - AFNetworking
+  - MBProgressHUD
+  - TSMessages
 
 SPEC CHECKSUMS:
   AFNetworking: 9ec8aafb9269236a7630bd8d9838ce2ba30fa2a0
+  MBProgressHUD: 1fd8591a2216d5dec6de24e09187bb03bcbe9946
+  TSMessages: e741d102e8291074b4ee7545b53c90ed5f220dd5
 
 COCOAPODS: 0.22.2
