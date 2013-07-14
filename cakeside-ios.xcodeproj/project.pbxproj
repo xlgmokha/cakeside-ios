@@ -25,6 +25,8 @@
 		CDCB348D1793405E00A25F1E /* cakeside_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCB348C1793405E00A25F1E /* cakeside_iosTests.m */; };
 		CDE67AB0179347D400B4742C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE67AAF179347D400B4742C /* LoginViewController.m */; };
 		CDE67AB2179348EB00B4742C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE67AB1179348EB00B4742C /* Security.framework */; };
+		CDE67AB617934E4200B4742C /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE67AB517934E4200B4742C /* NSString+Additions.m */; };
+		CDE67AC017934E7D00B4742C /* NSDictionary+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE67ABF17934E7D00B4742C /* NSDictionary+Additions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,10 @@
 		CDE67AAE179347D400B4742C /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		CDE67AAF179347D400B4742C /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		CDE67AB1179348EB00B4742C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		CDE67AB417934E4200B4742C /* NSString+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Additions.h"; sourceTree = "<group>"; };
+		CDE67AB517934E4200B4742C /* NSString+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Additions.m"; sourceTree = "<group>"; };
+		CDE67ABE17934E7D00B4742C /* NSDictionary+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Additions.h"; sourceTree = "<group>"; };
+		CDE67ABF17934E7D00B4742C /* NSDictionary+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Additions.m"; sourceTree = "<group>"; };
 		CE65D4B28521438085302B5E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -127,6 +133,7 @@
 		CDCB34611793405E00A25F1E /* cakeside-ios */ = {
 			isa = PBXGroup;
 			children = (
+				CDE67AB317934E4200B4742C /* utility */,
 				CDE67AAD1793471B00B4742C /* controllers */,
 				CDE67AAC1793471200B4742C /* views */,
 				CDE67AAB179346E800B4742C /* models */,
@@ -192,6 +199,17 @@
 				CDE67AAF179347D400B4742C /* LoginViewController.m */,
 			);
 			path = controllers;
+			sourceTree = "<group>";
+		};
+		CDE67AB317934E4200B4742C /* utility */ = {
+			isa = PBXGroup;
+			children = (
+				CDE67ABE17934E7D00B4742C /* NSDictionary+Additions.h */,
+				CDE67ABF17934E7D00B4742C /* NSDictionary+Additions.m */,
+				CDE67AB417934E4200B4742C /* NSString+Additions.h */,
+				CDE67AB517934E4200B4742C /* NSString+Additions.m */,
+			);
+			path = utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -339,6 +357,8 @@
 				CDCB34681793405E00A25F1E /* main.m in Sources */,
 				CDCB346C1793405E00A25F1E /* AppDelegate.m in Sources */,
 				CDE67AB0179347D400B4742C /* LoginViewController.m in Sources */,
+				CDE67AB617934E4200B4742C /* NSString+Additions.m in Sources */,
+				CDE67AC017934E7D00B4742C /* NSDictionary+Additions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
