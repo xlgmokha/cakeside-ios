@@ -26,6 +26,7 @@
 // URLs
 #define HOST        @"http://localhost:3000"
 #define URL_LOGIN   @"/api/v1/logins"
+#define URL_CAKES   @"/api/v1/creations"
 
 // KeyChain defs
 #define KEYCHAIN_ACCOUNT                @"cakeside"
@@ -38,3 +39,6 @@
 #define HUD_ANIMATION_DURATION_LONG 1.0
 #define HUD_ANIMATION_DURATION_EXTRALONG 1.6
 #define OVERLAY_MESSAGE_DURATION 3
+
+// Notifications
+#define NOTIFICATION_UPDATED_STATS_DATA @"NOTIFICATION_UPDATED_STATS_DATA"

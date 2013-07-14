@@ -29,6 +29,7 @@
 		CDE67AC017934E7D00B4742C /* NSDictionary+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE67ABF17934E7D00B4742C /* NSDictionary+Additions.m */; };
 		CDE67AC417935C1C00B4742C /* CreationsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE67AC217935C1C00B4742C /* CreationsTableViewController.m */; };
 		CDE67AC517935C1C00B4742C /* CreationsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDE67AC317935C1C00B4742C /* CreationsTableViewController.xib */; };
+		CDE67ACB179364A600B4742C /* Cake.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE67ACA179364A600B4742C /* Cake.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,8 @@
 		CDE67AC117935C1C00B4742C /* CreationsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreationsTableViewController.h; sourceTree = "<group>"; };
 		CDE67AC217935C1C00B4742C /* CreationsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreationsTableViewController.m; sourceTree = "<group>"; };
 		CDE67AC317935C1C00B4742C /* CreationsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CreationsTableViewController.xib; path = ../controllers/CreationsTableViewController.xib; sourceTree = "<group>"; };
+		CDE67AC9179364A600B4742C /* Cake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cake.h; sourceTree = "<group>"; };
+		CDE67ACA179364A600B4742C /* Cake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cake.m; sourceTree = "<group>"; };
 		CE65D4B28521438085302B5E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -185,6 +188,8 @@
 		CDE67AAB179346E800B4742C /* models */ = {
 			isa = PBXGroup;
 			children = (
+				CDE67AC9179364A600B4742C /* Cake.h */,
+				CDE67ACA179364A600B4742C /* Cake.m */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -369,6 +374,7 @@
 				CDE67AB617934E4200B4742C /* NSString+Additions.m in Sources */,
 				CDE67AC017934E7D00B4742C /* NSDictionary+Additions.m in Sources */,
 				CDE67AC417935C1C00B4742C /* CreationsTableViewController.m in Sources */,
+				CDE67ACB179364A600B4742C /* Cake.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

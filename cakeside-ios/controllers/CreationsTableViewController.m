@@ -7,9 +7,10 @@
 //
 
 #import "CreationsTableViewController.h"
+#import "Cake.h"
 
 @interface CreationsTableViewController ()
-
+@property (strong, nonatomic) NSMutableArray *data;
 @end
 
 @implementation CreationsTableViewController
@@ -32,6 +33,8 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+  // start loading data...
+  [self updateData];
 }
 
 - (void)didReceiveMemoryWarning
@@ -39,6 +42,65 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (void)updateData
+{
+  self.data = nil;
+  [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+  
+  NSError *error;
+  NSString *token = [SSKeychain passwordForService:KEYCHAIN_API_TOKEN account:KEYCHAIN_ACCOUNT error:&error];
+  
+  // load data
+  AFHTTPClient *httpClient = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:HOST]];
+  [httpClient registerHTTPOperationClass:[AFJSONRequestOperation class]];
+  [httpClient setDefaultHeader:@"Accept" value:@"application/json"];
+  [httpClient setDefaultHeader:@"Authorization" value:[NSString stringWithFormat:@"Token token=%@", token]];
+//  Authorization: Token token=
+  [httpClient setParameterEncoding:AFJSONParameterEncoding];
+  
+  NSMutableURLRequest *request;
+  request = [httpClient requestWithMethod:@"GET" path:URL_CAKES parameters:nil];
+  
+  NSLog(@"GET: %@", request);
+  
+  AFJSONRequestOperation *operation = [AFJSONRequestOperation
+                                       JSONRequestOperationWithRequest:request
+                                       success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON)
+                                       {
+                                         [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+                                         //NSLog(@"%@", JSON);
+                                         
+                                         if (!self.data)
+                                         {
+                                           self.data = [[NSMutableArray alloc] init];
+                                         }
+                                         
+                                         for (NSDictionary *data in JSON)
+                                         {
+                                           Cake *cake = [Cake initFromJSON:data];
+                                           [self.data addObject:cake];
+                                         }
+                                         
+//                                         [[NSNotificationCenter defaultCenter] postNotificationName:NOTIFICATION_UPDATED_STATS_DATA object:nil];
+                                       }
+                                       failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON)
+                                       {
+                                         NSLog(@"Request Failed with Error: %@, %@", error, error.userInfo);
+                                         [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+                                         [[NSNotificationCenter defaultCenter] postNotificationName:NOTIFICATION_UPDATED_STATS_DATA object:nil];
+                                         
+                                         BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Error" message:@"Failed to retrieve reading data. Please try again later."];
+                                         [alert setCancelButtonWithTitle:@"Ok" block:nil];
+                                         [alert show];
+                                       }];
+  [operation start];
+  
+  
+}
+
+
+
 
 #pragma mark - Table view data source
 
