@@ -17,13 +17,13 @@
 		CDCB346E1793405E00A25F1E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CDCB346D1793405E00A25F1E /* Default.png */; };
 		CDCB34701793405E00A25F1E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDCB346F1793405E00A25F1E /* Default@2x.png */; };
 		CDCB34721793405E00A25F1E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDCB34711793405E00A25F1E /* Default-568h@2x.png */; };
-		CDCB34751793405E00A25F1E /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCB34741793405E00A25F1E /* LoginViewController.m */; };
 		CDCB34781793405E00A25F1E /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDCB34761793405E00A25F1E /* LoginViewController.xib */; };
 		CDCB34801793405E00A25F1E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDCB347F1793405E00A25F1E /* SenTestingKit.framework */; };
 		CDCB34811793405E00A25F1E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDCB345B1793405E00A25F1E /* UIKit.framework */; };
 		CDCB34821793405E00A25F1E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDCB345D1793405E00A25F1E /* Foundation.framework */; };
 		CDCB348A1793405E00A25F1E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CDCB34881793405E00A25F1E /* InfoPlist.strings */; };
 		CDCB348D1793405E00A25F1E /* cakeside_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCB348C1793405E00A25F1E /* cakeside_iosTests.m */; };
+		CDE67AB0179347D400B4742C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE67AAF179347D400B4742C /* LoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +51,6 @@
 		CDCB346D1793405E00A25F1E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		CDCB346F1793405E00A25F1E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		CDCB34711793405E00A25F1E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		CDCB34731793405E00A25F1E /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = ../LoginViewController.h; sourceTree = "<group>"; };
-		CDCB34741793405E00A25F1E /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = ../LoginViewController.m; sourceTree = "<group>"; };
 		CDCB34771793405E00A25F1E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LoginViewController.xib; sourceTree = "<group>"; };
 		CDCB347E1793405E00A25F1E /* cakeside-iosTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "cakeside-iosTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDCB347F1793405E00A25F1E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -60,6 +58,8 @@
 		CDCB34891793405E00A25F1E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CDCB348B1793405E00A25F1E /* cakeside_iosTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cakeside_iosTests.h; sourceTree = "<group>"; };
 		CDCB348C1793405E00A25F1E /* cakeside_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cakeside_iosTests.m; sourceTree = "<group>"; };
+		CDE67AAE179347D400B4742C /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		CDE67AAF179347D400B4742C /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		CE65D4B28521438085302B5E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -184,8 +184,8 @@
 		CDE67AAD1793471B00B4742C /* controllers */ = {
 			isa = PBXGroup;
 			children = (
-				CDCB34731793405E00A25F1E /* LoginViewController.h */,
-				CDCB34741793405E00A25F1E /* LoginViewController.m */,
+				CDE67AAE179347D400B4742C /* LoginViewController.h */,
+				CDE67AAF179347D400B4742C /* LoginViewController.m */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -334,7 +334,7 @@
 			files = (
 				CDCB34681793405E00A25F1E /* main.m in Sources */,
 				CDCB346C1793405E00A25F1E /* AppDelegate.m in Sources */,
-				CDCB34751793405E00A25F1E /* LoginViewController.m in Sources */,
+				CDE67AB0179347D400B4742C /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
