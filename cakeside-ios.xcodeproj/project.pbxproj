@@ -1,1138 +1,535 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>03645F2011B24E10B462532E</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Pods-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>068C925544A84ED291ADA086</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Pods.xcconfig</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>416EF7F4DD18483B947CC003</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>896C6C12F4BD48178181116D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CE65D4B28521438085302B5E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CDCB344F1793405E00A25F1E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CDCB34611793405E00A25F1E</string>
-				<string>CDCB34851793405E00A25F1E</string>
-				<string>CDCB345A1793405E00A25F1E</string>
-				<string>CDCB34591793405E00A25F1E</string>
-				<string>068C925544A84ED291ADA086</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CDCB34501793405E00A25F1E</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0460</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>mo khan</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>CDCB34531793405E00A25F1E</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>CDCB344F1793405E00A25F1E</string>
-			<key>productRefGroup</key>
-			<string>CDCB34591793405E00A25F1E</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>CDCB34571793405E00A25F1E</string>
-				<string>CDCB347D1793405E00A25F1E</string>
-			</array>
-		</dict>
-		<key>CDCB34531793405E00A25F1E</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>CDCB348E1793405E00A25F1E</string>
-				<string>CDCB348F1793405E00A25F1E</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>CDCB34541793405E00A25F1E</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>CDCB34681793405E00A25F1E</string>
-				<string>CDCB346C1793405E00A25F1E</string>
-				<string>CDCB34751793405E00A25F1E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>CDCB34551793405E00A25F1E</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>CDCB345C1793405E00A25F1E</string>
-				<string>CDCB345E1793405E00A25F1E</string>
-				<string>CDCB34601793405E00A25F1E</string>
-				<string>896C6C12F4BD48178181116D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>CDCB34561793405E00A25F1E</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>CDCB34661793405E00A25F1E</string>
-				<string>CDCB346E1793405E00A25F1E</string>
-				<string>CDCB34701793405E00A25F1E</string>
-				<string>CDCB34721793405E00A25F1E</string>
-				<string>CDCB34781793405E00A25F1E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>CDCB34571793405E00A25F1E</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>CDCB34901793405E00A25F1E</string>
-			<key>buildPhases</key>
-			<array>
-				<string>416EF7F4DD18483B947CC003</string>
-				<string>CDCB34541793405E00A25F1E</string>
-				<string>CDCB34551793405E00A25F1E</string>
-				<string>CDCB34561793405E00A25F1E</string>
-				<string>03645F2011B24E10B462532E</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>cakeside-ios</string>
-			<key>productName</key>
-			<string>cakeside-ios</string>
-			<key>productReference</key>
-			<string>CDCB34581793405E00A25F1E</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>CDCB34581793405E00A25F1E</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>cakeside-ios.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>CDCB34591793405E00A25F1E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CDCB34581793405E00A25F1E</string>
-				<string>CDCB347E1793405E00A25F1E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CDCB345A1793405E00A25F1E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CDCB345B1793405E00A25F1E</string>
-				<string>CDCB345D1793405E00A25F1E</string>
-				<string>CDCB345F1793405E00A25F1E</string>
-				<string>CDCB347F1793405E00A25F1E</string>
-				<string>CE65D4B28521438085302B5E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CDCB345B1793405E00A25F1E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>UIKit.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/UIKit.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>CDCB345C1793405E00A25F1E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CDCB345B1793405E00A25F1E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CDCB345D1793405E00A25F1E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>CDCB345E1793405E00A25F1E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CDCB345D1793405E00A25F1E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CDCB345F1793405E00A25F1E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreGraphics.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/CoreGraphics.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>CDCB34601793405E00A25F1E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CDCB345F1793405E00A25F1E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CDCB34611793405E00A25F1E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CDCB3498179340F500A25F1E</string>
-				<string>CDCB3497179340F000A25F1E</string>
-				<string>CDCB3496179340E900A25F1E</string>
-				<string>CDCB346A1793405E00A25F1E</string>
-				<string>CDCB346B1793405E00A25F1E</string>
-				<string>CDCB34621793405E00A25F1E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>cakeside-ios</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CDCB34621793405E00A25F1E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CDCB34631793405E00A25F1E</string>
-				<string>CDCB34641793405E00A25F1E</string>
-				<string>CDCB34671793405E00A25F1E</string>
-				<string>CDCB34691793405E00A25F1E</string>
-				<string>CDCB346D1793405E00A25F1E</string>
-				<string>CDCB346F1793405E00A25F1E</string>
-				<string>CDCB34711793405E00A25F1E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CDCB34631793405E00A25F1E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>cakeside-ios-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CDCB34641793405E00A25F1E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CDCB34651793405E00A25F1E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CDCB34651793405E00A25F1E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CDCB34661793405E00A25F1E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CDCB34641793405E00A25F1E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CDCB34671793405E00A25F1E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>main.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CDCB34681793405E00A25F1E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CDCB34671793405E00A25F1E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CDCB34691793405E00A25F1E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>cakeside-ios-Prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CDCB346A1793405E00A25F1E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AppDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CDCB346B1793405E00A25F1E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AppDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CDCB346C1793405E00A25F1E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CDCB346B1793405E00A25F1E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CDCB346D1793405E00A25F1E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>Default.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CDCB346E1793405E00A25F1E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CDCB346D1793405E00A25F1E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CDCB346F1793405E00A25F1E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>Default@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CDCB34701793405E00A25F1E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CDCB346F1793405E00A25F1E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CDCB34711793405E00A25F1E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>Default-568h@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CDCB34721793405E00A25F1E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CDCB34711793405E00A25F1E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CDCB34731793405E00A25F1E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>LoginViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CDCB34741793405E00A25F1E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>LoginViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CDCB34751793405E00A25F1E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CDCB34741793405E00A25F1E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CDCB34761793405E00A25F1E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CDCB34771793405E00A25F1E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>LoginViewController.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CDCB34771793405E00A25F1E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/LoginViewController.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CDCB34781793405E00A25F1E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CDCB34761793405E00A25F1E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CDCB34791793405E00A25F1E</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>CDCB348D1793405E00A25F1E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>CDCB347A1793405E00A25F1E</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>CDCB34801793405E00A25F1E</string>
-				<string>CDCB34811793405E00A25F1E</string>
-				<string>CDCB34821793405E00A25F1E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>CDCB347B1793405E00A25F1E</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>CDCB348A1793405E00A25F1E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>CDCB347C1793405E00A25F1E</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string># Run the unit tests in this test bundle.
-"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests"
-</string>
-		</dict>
-		<key>CDCB347D1793405E00A25F1E</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>CDCB34931793405E00A25F1E</string>
-			<key>buildPhases</key>
-			<array>
-				<string>CDCB34791793405E00A25F1E</string>
-				<string>CDCB347A1793405E00A25F1E</string>
-				<string>CDCB347B1793405E00A25F1E</string>
-				<string>CDCB347C1793405E00A25F1E</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>CDCB34841793405E00A25F1E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>cakeside-iosTests</string>
-			<key>productName</key>
-			<string>cakeside-iosTests</string>
-			<key>productReference</key>
-			<string>CDCB347E1793405E00A25F1E</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle</string>
-		</dict>
-		<key>CDCB347E1793405E00A25F1E</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>cakeside-iosTests.octest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>CDCB347F1793405E00A25F1E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>SenTestingKit.framework</string>
-			<key>path</key>
-			<string>Library/Frameworks/SenTestingKit.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>CDCB34801793405E00A25F1E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CDCB347F1793405E00A25F1E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CDCB34811793405E00A25F1E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CDCB345B1793405E00A25F1E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CDCB34821793405E00A25F1E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CDCB345D1793405E00A25F1E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CDCB34831793405E00A25F1E</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>CDCB34501793405E00A25F1E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>CDCB34571793405E00A25F1E</string>
-			<key>remoteInfo</key>
-			<string>cakeside-ios</string>
-		</dict>
-		<key>CDCB34841793405E00A25F1E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>CDCB34571793405E00A25F1E</string>
-			<key>targetProxy</key>
-			<string>CDCB34831793405E00A25F1E</string>
-		</dict>
-		<key>CDCB34851793405E00A25F1E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CDCB348B1793405E00A25F1E</string>
-				<string>CDCB348C1793405E00A25F1E</string>
-				<string>CDCB34861793405E00A25F1E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>cakeside-iosTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CDCB34861793405E00A25F1E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CDCB34871793405E00A25F1E</string>
-				<string>CDCB34881793405E00A25F1E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CDCB34871793405E00A25F1E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>cakeside-iosTests-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CDCB34881793405E00A25F1E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CDCB34891793405E00A25F1E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CDCB34891793405E00A25F1E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CDCB348A1793405E00A25F1E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CDCB34881793405E00A25F1E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CDCB348B1793405E00A25F1E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>cakeside_iosTests.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CDCB348C1793405E00A25F1E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>cakeside_iosTests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CDCB348D1793405E00A25F1E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CDCB348C1793405E00A25F1E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CDCB348E1793405E00A25F1E</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>6.1</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>CDCB348F1793405E00A25F1E</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>6.1</string>
-				<key>OTHER_CFLAGS</key>
-				<string>-DNS_BLOCK_ASSERTIONS=1</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>CDCB34901793405E00A25F1E</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>CDCB34911793405E00A25F1E</string>
-				<string>CDCB34921793405E00A25F1E</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>CDCB34911793405E00A25F1E</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>068C925544A84ED291ADA086</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>cakeside-ios/cakeside-ios-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>cakeside-ios/cakeside-ios-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>CDCB34921793405E00A25F1E</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>068C925544A84ED291ADA086</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>cakeside-ios/cakeside-ios-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>cakeside-ios/cakeside-ios-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>CDCB34931793405E00A25F1E</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>CDCB34941793405E00A25F1E</string>
-				<string>CDCB34951793405E00A25F1E</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>CDCB34941793405E00A25F1E</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/cakeside-ios.app/cakeside-ios</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>"$(SDKROOT)/Developer/Library/Frameworks"</string>
-					<string>"$(DEVELOPER_LIBRARY_DIR)/Frameworks"</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>cakeside-ios/cakeside-ios-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>cakeside-iosTests/cakeside-iosTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUNDLE_LOADER)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>octest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>CDCB34951793405E00A25F1E</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/cakeside-ios.app/cakeside-ios</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>"$(SDKROOT)/Developer/Library/Frameworks"</string>
-					<string>"$(DEVELOPER_LIBRARY_DIR)/Frameworks"</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>cakeside-ios/cakeside-ios-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>cakeside-iosTests/cakeside-iosTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUNDLE_LOADER)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>octest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>CDCB3496179340E900A25F1E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CDCB34731793405E00A25F1E</string>
-				<string>CDCB34741793405E00A25F1E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>controllers</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CDCB3497179340F000A25F1E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CDCB34761793405E00A25F1E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>views</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CDCB3498179340F500A25F1E</key>
-		<dict>
-			<key>children</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>models</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CE65D4B28521438085302B5E</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>CDCB34501793405E00A25F1E</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		896C6C12F4BD48178181116D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE65D4B28521438085302B5E /* libPods.a */; };
+		CDCB345C1793405E00A25F1E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDCB345B1793405E00A25F1E /* UIKit.framework */; };
+		CDCB345E1793405E00A25F1E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDCB345D1793405E00A25F1E /* Foundation.framework */; };
+		CDCB34601793405E00A25F1E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDCB345F1793405E00A25F1E /* CoreGraphics.framework */; };
+		CDCB34661793405E00A25F1E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CDCB34641793405E00A25F1E /* InfoPlist.strings */; };
+		CDCB34681793405E00A25F1E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCB34671793405E00A25F1E /* main.m */; };
+		CDCB346C1793405E00A25F1E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCB346B1793405E00A25F1E /* AppDelegate.m */; };
+		CDCB346E1793405E00A25F1E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CDCB346D1793405E00A25F1E /* Default.png */; };
+		CDCB34701793405E00A25F1E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDCB346F1793405E00A25F1E /* Default@2x.png */; };
+		CDCB34721793405E00A25F1E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDCB34711793405E00A25F1E /* Default-568h@2x.png */; };
+		CDCB34751793405E00A25F1E /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCB34741793405E00A25F1E /* LoginViewController.m */; };
+		CDCB34781793405E00A25F1E /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDCB34761793405E00A25F1E /* LoginViewController.xib */; };
+		CDCB34801793405E00A25F1E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDCB347F1793405E00A25F1E /* SenTestingKit.framework */; };
+		CDCB34811793405E00A25F1E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDCB345B1793405E00A25F1E /* UIKit.framework */; };
+		CDCB34821793405E00A25F1E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDCB345D1793405E00A25F1E /* Foundation.framework */; };
+		CDCB348A1793405E00A25F1E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CDCB34881793405E00A25F1E /* InfoPlist.strings */; };
+		CDCB348D1793405E00A25F1E /* cakeside_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCB348C1793405E00A25F1E /* cakeside_iosTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CDCB34831793405E00A25F1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDCB34501793405E00A25F1E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDCB34571793405E00A25F1E;
+			remoteInfo = "cakeside-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		068C925544A84ED291ADA086 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		CDCB34581793405E00A25F1E /* cakeside-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cakeside-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDCB345B1793405E00A25F1E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CDCB345D1793405E00A25F1E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CDCB345F1793405E00A25F1E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CDCB34631793405E00A25F1E /* cakeside-ios-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "cakeside-ios-Info.plist"; sourceTree = "<group>"; };
+		CDCB34651793405E00A25F1E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CDCB34671793405E00A25F1E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CDCB34691793405E00A25F1E /* cakeside-ios-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cakeside-ios-Prefix.pch"; sourceTree = "<group>"; };
+		CDCB346A1793405E00A25F1E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CDCB346B1793405E00A25F1E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CDCB346D1793405E00A25F1E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		CDCB346F1793405E00A25F1E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		CDCB34711793405E00A25F1E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CDCB34731793405E00A25F1E /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = ../LoginViewController.h; sourceTree = "<group>"; };
+		CDCB34741793405E00A25F1E /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = ../LoginViewController.m; sourceTree = "<group>"; };
+		CDCB34771793405E00A25F1E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LoginViewController.xib; sourceTree = "<group>"; };
+		CDCB347E1793405E00A25F1E /* cakeside-iosTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "cakeside-iosTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDCB347F1793405E00A25F1E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		CDCB34871793405E00A25F1E /* cakeside-iosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "cakeside-iosTests-Info.plist"; sourceTree = "<group>"; };
+		CDCB34891793405E00A25F1E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CDCB348B1793405E00A25F1E /* cakeside_iosTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cakeside_iosTests.h; sourceTree = "<group>"; };
+		CDCB348C1793405E00A25F1E /* cakeside_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cakeside_iosTests.m; sourceTree = "<group>"; };
+		CE65D4B28521438085302B5E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CDCB34551793405E00A25F1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDCB345C1793405E00A25F1E /* UIKit.framework in Frameworks */,
+				CDCB345E1793405E00A25F1E /* Foundation.framework in Frameworks */,
+				CDCB34601793405E00A25F1E /* CoreGraphics.framework in Frameworks */,
+				896C6C12F4BD48178181116D /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDCB347A1793405E00A25F1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDCB34801793405E00A25F1E /* SenTestingKit.framework in Frameworks */,
+				CDCB34811793405E00A25F1E /* UIKit.framework in Frameworks */,
+				CDCB34821793405E00A25F1E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CDCB344F1793405E00A25F1E = {
+			isa = PBXGroup;
+			children = (
+				CDCB34611793405E00A25F1E /* cakeside-ios */,
+				CDCB34851793405E00A25F1E /* cakeside-iosTests */,
+				CDCB345A1793405E00A25F1E /* Frameworks */,
+				CDCB34591793405E00A25F1E /* Products */,
+				068C925544A84ED291ADA086 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		CDCB34591793405E00A25F1E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDCB34581793405E00A25F1E /* cakeside-ios.app */,
+				CDCB347E1793405E00A25F1E /* cakeside-iosTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CDCB345A1793405E00A25F1E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDCB345B1793405E00A25F1E /* UIKit.framework */,
+				CDCB345D1793405E00A25F1E /* Foundation.framework */,
+				CDCB345F1793405E00A25F1E /* CoreGraphics.framework */,
+				CDCB347F1793405E00A25F1E /* SenTestingKit.framework */,
+				CE65D4B28521438085302B5E /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CDCB34611793405E00A25F1E /* cakeside-ios */ = {
+			isa = PBXGroup;
+			children = (
+				CDE67AAD1793471B00B4742C /* controllers */,
+				CDE67AAC1793471200B4742C /* views */,
+				CDE67AAB179346E800B4742C /* models */,
+				CDCB346A1793405E00A25F1E /* AppDelegate.h */,
+				CDCB346B1793405E00A25F1E /* AppDelegate.m */,
+				CDCB34621793405E00A25F1E /* Supporting Files */,
+			);
+			path = "cakeside-ios";
+			sourceTree = "<group>";
+		};
+		CDCB34621793405E00A25F1E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CDCB34631793405E00A25F1E /* cakeside-ios-Info.plist */,
+				CDCB34641793405E00A25F1E /* InfoPlist.strings */,
+				CDCB34671793405E00A25F1E /* main.m */,
+				CDCB34691793405E00A25F1E /* cakeside-ios-Prefix.pch */,
+				CDCB346D1793405E00A25F1E /* Default.png */,
+				CDCB346F1793405E00A25F1E /* Default@2x.png */,
+				CDCB34711793405E00A25F1E /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CDCB34851793405E00A25F1E /* cakeside-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				CDCB348B1793405E00A25F1E /* cakeside_iosTests.h */,
+				CDCB348C1793405E00A25F1E /* cakeside_iosTests.m */,
+				CDCB34861793405E00A25F1E /* Supporting Files */,
+			);
+			path = "cakeside-iosTests";
+			sourceTree = "<group>";
+		};
+		CDCB34861793405E00A25F1E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CDCB34871793405E00A25F1E /* cakeside-iosTests-Info.plist */,
+				CDCB34881793405E00A25F1E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CDE67AAB179346E800B4742C /* models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		CDE67AAC1793471200B4742C /* views */ = {
+			isa = PBXGroup;
+			children = (
+				CDCB34761793405E00A25F1E /* LoginViewController.xib */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		CDE67AAD1793471B00B4742C /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CDCB34731793405E00A25F1E /* LoginViewController.h */,
+				CDCB34741793405E00A25F1E /* LoginViewController.m */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CDCB34571793405E00A25F1E /* cakeside-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDCB34901793405E00A25F1E /* Build configuration list for PBXNativeTarget "cakeside-ios" */;
+			buildPhases = (
+				416EF7F4DD18483B947CC003 /* Check Pods Manifest.lock */,
+				CDCB34541793405E00A25F1E /* Sources */,
+				CDCB34551793405E00A25F1E /* Frameworks */,
+				CDCB34561793405E00A25F1E /* Resources */,
+				03645F2011B24E10B462532E /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "cakeside-ios";
+			productName = "cakeside-ios";
+			productReference = CDCB34581793405E00A25F1E /* cakeside-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CDCB347D1793405E00A25F1E /* cakeside-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDCB34931793405E00A25F1E /* Build configuration list for PBXNativeTarget "cakeside-iosTests" */;
+			buildPhases = (
+				CDCB34791793405E00A25F1E /* Sources */,
+				CDCB347A1793405E00A25F1E /* Frameworks */,
+				CDCB347B1793405E00A25F1E /* Resources */,
+				CDCB347C1793405E00A25F1E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDCB34841793405E00A25F1E /* PBXTargetDependency */,
+			);
+			name = "cakeside-iosTests";
+			productName = "cakeside-iosTests";
+			productReference = CDCB347E1793405E00A25F1E /* cakeside-iosTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CDCB34501793405E00A25F1E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "mo khan";
+			};
+			buildConfigurationList = CDCB34531793405E00A25F1E /* Build configuration list for PBXProject "cakeside-ios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CDCB344F1793405E00A25F1E;
+			productRefGroup = CDCB34591793405E00A25F1E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CDCB34571793405E00A25F1E /* cakeside-ios */,
+				CDCB347D1793405E00A25F1E /* cakeside-iosTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CDCB34561793405E00A25F1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDCB34661793405E00A25F1E /* InfoPlist.strings in Resources */,
+				CDCB346E1793405E00A25F1E /* Default.png in Resources */,
+				CDCB34701793405E00A25F1E /* Default@2x.png in Resources */,
+				CDCB34721793405E00A25F1E /* Default-568h@2x.png in Resources */,
+				CDCB34781793405E00A25F1E /* LoginViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDCB347B1793405E00A25F1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDCB348A1793405E00A25F1E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03645F2011B24E10B462532E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		416EF7F4DD18483B947CC003 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CDCB347C1793405E00A25F1E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CDCB34541793405E00A25F1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDCB34681793405E00A25F1E /* main.m in Sources */,
+				CDCB346C1793405E00A25F1E /* AppDelegate.m in Sources */,
+				CDCB34751793405E00A25F1E /* LoginViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDCB34791793405E00A25F1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDCB348D1793405E00A25F1E /* cakeside_iosTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CDCB34841793405E00A25F1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDCB34571793405E00A25F1E /* cakeside-ios */;
+			targetProxy = CDCB34831793405E00A25F1E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CDCB34641793405E00A25F1E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDCB34651793405E00A25F1E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CDCB34761793405E00A25F1E /* LoginViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDCB34771793405E00A25F1E /* en */,
+			);
+			name = LoginViewController.xib;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		CDCB34881793405E00A25F1E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDCB34891793405E00A25F1E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CDCB348E1793405E00A25F1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CDCB348F1793405E00A25F1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CDCB34911793405E00A25F1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 068C925544A84ED291ADA086 /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cakeside-ios/cakeside-ios-Prefix.pch";
+				INFOPLIST_FILE = "cakeside-ios/cakeside-ios-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CDCB34921793405E00A25F1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 068C925544A84ED291ADA086 /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cakeside-ios/cakeside-ios-Prefix.pch";
+				INFOPLIST_FILE = "cakeside-ios/cakeside-ios-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CDCB34941793405E00A25F1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/cakeside-ios.app/cakeside-ios";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cakeside-ios/cakeside-ios-Prefix.pch";
+				INFOPLIST_FILE = "cakeside-iosTests/cakeside-iosTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		CDCB34951793405E00A25F1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/cakeside-ios.app/cakeside-ios";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cakeside-ios/cakeside-ios-Prefix.pch";
+				INFOPLIST_FILE = "cakeside-iosTests/cakeside-iosTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CDCB34531793405E00A25F1E /* Build configuration list for PBXProject "cakeside-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDCB348E1793405E00A25F1E /* Debug */,
+				CDCB348F1793405E00A25F1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDCB34901793405E00A25F1E /* Build configuration list for PBXNativeTarget "cakeside-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDCB34911793405E00A25F1E /* Debug */,
+				CDCB34921793405E00A25F1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDCB34931793405E00A25F1E /* Build configuration list for PBXNativeTarget "cakeside-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDCB34941793405E00A25F1E /* Debug */,
+				CDCB34951793405E00A25F1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CDCB34501793405E00A25F1E /* Project object */;
+}
