@@ -27,6 +27,8 @@
 		CDE67AB2179348EB00B4742C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE67AB1179348EB00B4742C /* Security.framework */; };
 		CDE67AB617934E4200B4742C /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE67AB517934E4200B4742C /* NSString+Additions.m */; };
 		CDE67AC017934E7D00B4742C /* NSDictionary+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE67ABF17934E7D00B4742C /* NSDictionary+Additions.m */; };
+		CDE67AC417935C1C00B4742C /* CreationsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE67AC217935C1C00B4742C /* CreationsTableViewController.m */; };
+		CDE67AC517935C1C00B4742C /* CreationsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDE67AC317935C1C00B4742C /* CreationsTableViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,9 @@
 		CDE67AB517934E4200B4742C /* NSString+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Additions.m"; sourceTree = "<group>"; };
 		CDE67ABE17934E7D00B4742C /* NSDictionary+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Additions.h"; sourceTree = "<group>"; };
 		CDE67ABF17934E7D00B4742C /* NSDictionary+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Additions.m"; sourceTree = "<group>"; };
+		CDE67AC117935C1C00B4742C /* CreationsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreationsTableViewController.h; sourceTree = "<group>"; };
+		CDE67AC217935C1C00B4742C /* CreationsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreationsTableViewController.m; sourceTree = "<group>"; };
+		CDE67AC317935C1C00B4742C /* CreationsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CreationsTableViewController.xib; path = ../controllers/CreationsTableViewController.xib; sourceTree = "<group>"; };
 		CE65D4B28521438085302B5E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -187,6 +192,7 @@
 		CDE67AAC1793471200B4742C /* views */ = {
 			isa = PBXGroup;
 			children = (
+				CDE67AC317935C1C00B4742C /* CreationsTableViewController.xib */,
 				CDCB34761793405E00A25F1E /* LoginViewController.xib */,
 			);
 			path = views;
@@ -197,6 +203,8 @@
 			children = (
 				CDE67AAE179347D400B4742C /* LoginViewController.h */,
 				CDE67AAF179347D400B4742C /* LoginViewController.m */,
+				CDE67AC117935C1C00B4742C /* CreationsTableViewController.h */,
+				CDE67AC217935C1C00B4742C /* CreationsTableViewController.m */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -290,6 +298,7 @@
 				CDCB34701793405E00A25F1E /* Default@2x.png in Resources */,
 				CDCB34721793405E00A25F1E /* Default-568h@2x.png in Resources */,
 				CDCB34781793405E00A25F1E /* LoginViewController.xib in Resources */,
+				CDE67AC517935C1C00B4742C /* CreationsTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +368,7 @@
 				CDE67AB0179347D400B4742C /* LoginViewController.m in Sources */,
 				CDE67AB617934E4200B4742C /* NSString+Additions.m in Sources */,
 				CDE67AC017934E7D00B4742C /* NSDictionary+Additions.m in Sources */,
+				CDE67AC417935C1C00B4742C /* CreationsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
