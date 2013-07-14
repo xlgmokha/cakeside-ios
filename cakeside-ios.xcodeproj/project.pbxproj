@@ -1,0 +1,468 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CDCB345C1793405E00A25F1E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDCB345B1793405E00A25F1E /* UIKit.framework */; };
+		CDCB345E1793405E00A25F1E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDCB345D1793405E00A25F1E /* Foundation.framework */; };
+		CDCB34601793405E00A25F1E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDCB345F1793405E00A25F1E /* CoreGraphics.framework */; };
+		CDCB34661793405E00A25F1E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CDCB34641793405E00A25F1E /* InfoPlist.strings */; };
+		CDCB34681793405E00A25F1E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCB34671793405E00A25F1E /* main.m */; };
+		CDCB346C1793405E00A25F1E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCB346B1793405E00A25F1E /* AppDelegate.m */; };
+		CDCB346E1793405E00A25F1E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CDCB346D1793405E00A25F1E /* Default.png */; };
+		CDCB34701793405E00A25F1E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDCB346F1793405E00A25F1E /* Default@2x.png */; };
+		CDCB34721793405E00A25F1E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDCB34711793405E00A25F1E /* Default-568h@2x.png */; };
+		CDCB34751793405E00A25F1E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCB34741793405E00A25F1E /* ViewController.m */; };
+		CDCB34781793405E00A25F1E /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDCB34761793405E00A25F1E /* ViewController.xib */; };
+		CDCB34801793405E00A25F1E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDCB347F1793405E00A25F1E /* SenTestingKit.framework */; };
+		CDCB34811793405E00A25F1E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDCB345B1793405E00A25F1E /* UIKit.framework */; };
+		CDCB34821793405E00A25F1E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDCB345D1793405E00A25F1E /* Foundation.framework */; };
+		CDCB348A1793405E00A25F1E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CDCB34881793405E00A25F1E /* InfoPlist.strings */; };
+		CDCB348D1793405E00A25F1E /* cakeside_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCB348C1793405E00A25F1E /* cakeside_iosTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CDCB34831793405E00A25F1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDCB34501793405E00A25F1E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDCB34571793405E00A25F1E;
+			remoteInfo = "cakeside-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CDCB34581793405E00A25F1E /* cakeside-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cakeside-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDCB345B1793405E00A25F1E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CDCB345D1793405E00A25F1E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CDCB345F1793405E00A25F1E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CDCB34631793405E00A25F1E /* cakeside-ios-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "cakeside-ios-Info.plist"; sourceTree = "<group>"; };
+		CDCB34651793405E00A25F1E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CDCB34671793405E00A25F1E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CDCB34691793405E00A25F1E /* cakeside-ios-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cakeside-ios-Prefix.pch"; sourceTree = "<group>"; };
+		CDCB346A1793405E00A25F1E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CDCB346B1793405E00A25F1E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CDCB346D1793405E00A25F1E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		CDCB346F1793405E00A25F1E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		CDCB34711793405E00A25F1E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CDCB34731793405E00A25F1E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CDCB34741793405E00A25F1E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CDCB34771793405E00A25F1E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		CDCB347E1793405E00A25F1E /* cakeside-iosTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "cakeside-iosTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDCB347F1793405E00A25F1E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		CDCB34871793405E00A25F1E /* cakeside-iosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "cakeside-iosTests-Info.plist"; sourceTree = "<group>"; };
+		CDCB34891793405E00A25F1E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CDCB348B1793405E00A25F1E /* cakeside_iosTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cakeside_iosTests.h; sourceTree = "<group>"; };
+		CDCB348C1793405E00A25F1E /* cakeside_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cakeside_iosTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CDCB34551793405E00A25F1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDCB345C1793405E00A25F1E /* UIKit.framework in Frameworks */,
+				CDCB345E1793405E00A25F1E /* Foundation.framework in Frameworks */,
+				CDCB34601793405E00A25F1E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDCB347A1793405E00A25F1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDCB34801793405E00A25F1E /* SenTestingKit.framework in Frameworks */,
+				CDCB34811793405E00A25F1E /* UIKit.framework in Frameworks */,
+				CDCB34821793405E00A25F1E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CDCB344F1793405E00A25F1E = {
+			isa = PBXGroup;
+			children = (
+				CDCB34611793405E00A25F1E /* cakeside-ios */,
+				CDCB34851793405E00A25F1E /* cakeside-iosTests */,
+				CDCB345A1793405E00A25F1E /* Frameworks */,
+				CDCB34591793405E00A25F1E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CDCB34591793405E00A25F1E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDCB34581793405E00A25F1E /* cakeside-ios.app */,
+				CDCB347E1793405E00A25F1E /* cakeside-iosTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CDCB345A1793405E00A25F1E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDCB345B1793405E00A25F1E /* UIKit.framework */,
+				CDCB345D1793405E00A25F1E /* Foundation.framework */,
+				CDCB345F1793405E00A25F1E /* CoreGraphics.framework */,
+				CDCB347F1793405E00A25F1E /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CDCB34611793405E00A25F1E /* cakeside-ios */ = {
+			isa = PBXGroup;
+			children = (
+				CDCB346A1793405E00A25F1E /* AppDelegate.h */,
+				CDCB346B1793405E00A25F1E /* AppDelegate.m */,
+				CDCB34731793405E00A25F1E /* ViewController.h */,
+				CDCB34741793405E00A25F1E /* ViewController.m */,
+				CDCB34761793405E00A25F1E /* ViewController.xib */,
+				CDCB34621793405E00A25F1E /* Supporting Files */,
+			);
+			path = "cakeside-ios";
+			sourceTree = "<group>";
+		};
+		CDCB34621793405E00A25F1E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CDCB34631793405E00A25F1E /* cakeside-ios-Info.plist */,
+				CDCB34641793405E00A25F1E /* InfoPlist.strings */,
+				CDCB34671793405E00A25F1E /* main.m */,
+				CDCB34691793405E00A25F1E /* cakeside-ios-Prefix.pch */,
+				CDCB346D1793405E00A25F1E /* Default.png */,
+				CDCB346F1793405E00A25F1E /* Default@2x.png */,
+				CDCB34711793405E00A25F1E /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CDCB34851793405E00A25F1E /* cakeside-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				CDCB348B1793405E00A25F1E /* cakeside_iosTests.h */,
+				CDCB348C1793405E00A25F1E /* cakeside_iosTests.m */,
+				CDCB34861793405E00A25F1E /* Supporting Files */,
+			);
+			path = "cakeside-iosTests";
+			sourceTree = "<group>";
+		};
+		CDCB34861793405E00A25F1E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CDCB34871793405E00A25F1E /* cakeside-iosTests-Info.plist */,
+				CDCB34881793405E00A25F1E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CDCB34571793405E00A25F1E /* cakeside-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDCB34901793405E00A25F1E /* Build configuration list for PBXNativeTarget "cakeside-ios" */;
+			buildPhases = (
+				CDCB34541793405E00A25F1E /* Sources */,
+				CDCB34551793405E00A25F1E /* Frameworks */,
+				CDCB34561793405E00A25F1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "cakeside-ios";
+			productName = "cakeside-ios";
+			productReference = CDCB34581793405E00A25F1E /* cakeside-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CDCB347D1793405E00A25F1E /* cakeside-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDCB34931793405E00A25F1E /* Build configuration list for PBXNativeTarget "cakeside-iosTests" */;
+			buildPhases = (
+				CDCB34791793405E00A25F1E /* Sources */,
+				CDCB347A1793405E00A25F1E /* Frameworks */,
+				CDCB347B1793405E00A25F1E /* Resources */,
+				CDCB347C1793405E00A25F1E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDCB34841793405E00A25F1E /* PBXTargetDependency */,
+			);
+			name = "cakeside-iosTests";
+			productName = "cakeside-iosTests";
+			productReference = CDCB347E1793405E00A25F1E /* cakeside-iosTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CDCB34501793405E00A25F1E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "mo khan";
+			};
+			buildConfigurationList = CDCB34531793405E00A25F1E /* Build configuration list for PBXProject "cakeside-ios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CDCB344F1793405E00A25F1E;
+			productRefGroup = CDCB34591793405E00A25F1E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CDCB34571793405E00A25F1E /* cakeside-ios */,
+				CDCB347D1793405E00A25F1E /* cakeside-iosTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CDCB34561793405E00A25F1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDCB34661793405E00A25F1E /* InfoPlist.strings in Resources */,
+				CDCB346E1793405E00A25F1E /* Default.png in Resources */,
+				CDCB34701793405E00A25F1E /* Default@2x.png in Resources */,
+				CDCB34721793405E00A25F1E /* Default-568h@2x.png in Resources */,
+				CDCB34781793405E00A25F1E /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDCB347B1793405E00A25F1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDCB348A1793405E00A25F1E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CDCB347C1793405E00A25F1E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CDCB34541793405E00A25F1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDCB34681793405E00A25F1E /* main.m in Sources */,
+				CDCB346C1793405E00A25F1E /* AppDelegate.m in Sources */,
+				CDCB34751793405E00A25F1E /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDCB34791793405E00A25F1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDCB348D1793405E00A25F1E /* cakeside_iosTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CDCB34841793405E00A25F1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDCB34571793405E00A25F1E /* cakeside-ios */;
+			targetProxy = CDCB34831793405E00A25F1E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CDCB34641793405E00A25F1E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDCB34651793405E00A25F1E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CDCB34761793405E00A25F1E /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDCB34771793405E00A25F1E /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+		CDCB34881793405E00A25F1E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDCB34891793405E00A25F1E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CDCB348E1793405E00A25F1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CDCB348F1793405E00A25F1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CDCB34911793405E00A25F1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cakeside-ios/cakeside-ios-Prefix.pch";
+				INFOPLIST_FILE = "cakeside-ios/cakeside-ios-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CDCB34921793405E00A25F1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cakeside-ios/cakeside-ios-Prefix.pch";
+				INFOPLIST_FILE = "cakeside-ios/cakeside-ios-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CDCB34941793405E00A25F1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/cakeside-ios.app/cakeside-ios";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cakeside-ios/cakeside-ios-Prefix.pch";
+				INFOPLIST_FILE = "cakeside-iosTests/cakeside-iosTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		CDCB34951793405E00A25F1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/cakeside-ios.app/cakeside-ios";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "cakeside-ios/cakeside-ios-Prefix.pch";
+				INFOPLIST_FILE = "cakeside-iosTests/cakeside-iosTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CDCB34531793405E00A25F1E /* Build configuration list for PBXProject "cakeside-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDCB348E1793405E00A25F1E /* Debug */,
+				CDCB348F1793405E00A25F1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDCB34901793405E00A25F1E /* Build configuration list for PBXNativeTarget "cakeside-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDCB34911793405E00A25F1E /* Debug */,
+				CDCB34921793405E00A25F1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CDCB34931793405E00A25F1E /* Build configuration list for PBXNativeTarget "cakeside-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDCB34941793405E00A25F1E /* Debug */,
+				CDCB34951793405E00A25F1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CDCB34501793405E00A25F1E /* Project object */;
+}
