@@ -16,8 +16,8 @@
 		CDCB346E1793405E00A25F1E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CDCB346D1793405E00A25F1E /* Default.png */; };
 		CDCB34701793405E00A25F1E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDCB346F1793405E00A25F1E /* Default@2x.png */; };
 		CDCB34721793405E00A25F1E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDCB34711793405E00A25F1E /* Default-568h@2x.png */; };
-		CDCB34751793405E00A25F1E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCB34741793405E00A25F1E /* ViewController.m */; };
-		CDCB34781793405E00A25F1E /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDCB34761793405E00A25F1E /* ViewController.xib */; };
+		CDCB34751793405E00A25F1E /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCB34741793405E00A25F1E /* LoginViewController.m */; };
+		CDCB34781793405E00A25F1E /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDCB34761793405E00A25F1E /* LoginViewController.xib */; };
 		CDCB34801793405E00A25F1E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDCB347F1793405E00A25F1E /* SenTestingKit.framework */; };
 		CDCB34811793405E00A25F1E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDCB345B1793405E00A25F1E /* UIKit.framework */; };
 		CDCB34821793405E00A25F1E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDCB345D1793405E00A25F1E /* Foundation.framework */; };
@@ -49,9 +49,9 @@
 		CDCB346D1793405E00A25F1E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		CDCB346F1793405E00A25F1E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		CDCB34711793405E00A25F1E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		CDCB34731793405E00A25F1E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CDCB34741793405E00A25F1E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		CDCB34771793405E00A25F1E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		CDCB34731793405E00A25F1E /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		CDCB34741793405E00A25F1E /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		CDCB34771793405E00A25F1E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LoginViewController.xib; sourceTree = "<group>"; };
 		CDCB347E1793405E00A25F1E /* cakeside-iosTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "cakeside-iosTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDCB347F1793405E00A25F1E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		CDCB34871793405E00A25F1E /* cakeside-iosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "cakeside-iosTests-Info.plist"; sourceTree = "<group>"; };
@@ -119,9 +119,9 @@
 			children = (
 				CDCB346A1793405E00A25F1E /* AppDelegate.h */,
 				CDCB346B1793405E00A25F1E /* AppDelegate.m */,
-				CDCB34731793405E00A25F1E /* ViewController.h */,
-				CDCB34741793405E00A25F1E /* ViewController.m */,
-				CDCB34761793405E00A25F1E /* ViewController.xib */,
+				CDCB34731793405E00A25F1E /* LoginViewController.h */,
+				CDCB34741793405E00A25F1E /* LoginViewController.m */,
+				CDCB34761793405E00A25F1E /* LoginViewController.xib */,
 				CDCB34621793405E00A25F1E /* Supporting Files */,
 			);
 			path = "cakeside-ios";
@@ -235,7 +235,7 @@
 				CDCB346E1793405E00A25F1E /* Default.png in Resources */,
 				CDCB34701793405E00A25F1E /* Default@2x.png in Resources */,
 				CDCB34721793405E00A25F1E /* Default-568h@2x.png in Resources */,
-				CDCB34781793405E00A25F1E /* ViewController.xib in Resources */,
+				CDCB34781793405E00A25F1E /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +272,7 @@
 			files = (
 				CDCB34681793405E00A25F1E /* main.m in Sources */,
 				CDCB346C1793405E00A25F1E /* AppDelegate.m in Sources */,
-				CDCB34751793405E00A25F1E /* ViewController.m in Sources */,
+				CDCB34751793405E00A25F1E /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,12 +303,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		CDCB34761793405E00A25F1E /* ViewController.xib */ = {
+		CDCB34761793405E00A25F1E /* LoginViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				CDCB34771793405E00A25F1E /* en */,
 			);
-			name = ViewController.xib;
+			name = LoginViewController.xib;
 			sourceTree = "<group>";
 		};
 		CDCB34881793405E00A25F1E /* InfoPlist.strings */ = {
