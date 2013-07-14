@@ -120,9 +120,7 @@
        [SSKeychain setPassword:token forService:KEYCHAIN_API_TOKEN account:KEYCHAIN_ACCOUNT];
        [SSKeychain setPassword:self.emailTextBox.text forService:KEYCHAIN_USER_NAME account:KEYCHAIN_ACCOUNT];
        [SSKeychain setPassword:self.passwordTextBox.text forService:KEYCHAIN_USER_PASSWORD account:KEYCHAIN_ACCOUNT];
-       //[self performSegueWithIdentifier:@"gotoMainInterface" sender:nil];
        CreationsTableViewController *controller = [[CreationsTableViewController alloc] initWithNibName:@"CreationsTableViewController" bundle:nil];
-       [self.navigationController popViewControllerAnimated:NO];
        [self.navigationController pushViewController:controller animated:YES];
 
      }
