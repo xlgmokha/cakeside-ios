@@ -117,11 +117,11 @@
 		CDCB34611793405E00A25F1E /* cakeside-ios */ = {
 			isa = PBXGroup;
 			children = (
+				CDCB3498179340F500A25F1E /* models */,
+				CDCB3497179340F000A25F1E /* views */,
+				CDCB3496179340E900A25F1E /* controllers */,
 				CDCB346A1793405E00A25F1E /* AppDelegate.h */,
 				CDCB346B1793405E00A25F1E /* AppDelegate.m */,
-				CDCB34731793405E00A25F1E /* LoginViewController.h */,
-				CDCB34741793405E00A25F1E /* LoginViewController.m */,
-				CDCB34761793405E00A25F1E /* LoginViewController.xib */,
 				CDCB34621793405E00A25F1E /* Supporting Files */,
 			);
 			path = "cakeside-ios";
@@ -158,6 +158,30 @@
 				CDCB34881793405E00A25F1E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CDCB3496179340E900A25F1E /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CDCB34731793405E00A25F1E /* LoginViewController.h */,
+				CDCB34741793405E00A25F1E /* LoginViewController.m */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
+		CDCB3497179340F000A25F1E /* views */ = {
+			isa = PBXGroup;
+			children = (
+				CDCB34761793405E00A25F1E /* LoginViewController.xib */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		CDCB3498179340F500A25F1E /* models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
