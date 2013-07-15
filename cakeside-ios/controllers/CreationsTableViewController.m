@@ -18,6 +18,8 @@
 - (void)viewDidLoad
 {
   [super viewDidLoad];
+  [self.navigationItem setHidesBackButton:YES];
+  self.title = @"CakeSide";
 
   [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updatedDataNotification) name:NOTIFICATION_CAKES_UPDATED object:nil];
   // start loading data
