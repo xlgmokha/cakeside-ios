@@ -10,13 +10,6 @@
 - (void)viewDidLoad
 {
   [super viewDidLoad];
-  UIView *emailPaddingView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 5, 20)];
-  self.emailTextBox.leftView = emailPaddingView;
-  self.emailTextBox.leftViewMode = UITextFieldViewModeAlways;
-
-  UIView *passwordPaddingView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 5, 20)];
-  self.passwordTextBox.leftView = passwordPaddingView;
-  self.passwordTextBox.leftViewMode = UITextFieldViewModeAlways;
 
   // prepopulate username/password with stored information
   NSError *error;
