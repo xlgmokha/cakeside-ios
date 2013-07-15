@@ -1,0 +1,8 @@
+## XC Workspace
+
+In order to run the application, you will need to open the cakeside-ios.xcworkspace. NOT the xcodeproj.
+
+## Registration
+
+You will need to register at https://cakeside.com/ in order to sign in.
+
