@@ -92,7 +92,7 @@
 {
   if (!self.data || self.data.count == 0)
   {
-    return 0;
+    return 1;
   }
   else
   {
@@ -102,6 +102,17 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+  if(!self.data || self.data.count == 0)
+  {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"LoadingCell"];
+    if (cell == nil)
+    {
+      cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"LoadingCell"];
+    }
+    cell.textLabel.text = @"Loading...";
+    return cell;
+  }
+
   UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CakeCell"];
   if (cell == nil)
   {
