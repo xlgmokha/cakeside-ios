@@ -1,11 +1,3 @@
-//
-//  CreationsTableViewController.m
-//  cakeside-ios
-//
-//  Created by mo khan on 2013-07-14.
-//  Copyright (c) 2013 mo khan. All rights reserved.
-//
-
 #import "CreationsTableViewController.h"
 #import "Cake.h"
 
@@ -19,33 +11,22 @@
 {
     self = [super initWithStyle:style];
     if (self) {
-        // Custom initialization
     }
     return self;
 }
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
+  [super viewDidLoad];
 
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-  
-  [[NSNotificationCenter defaultCenter] addObserver:self
-                                           selector:@selector(updatedDataNotification)
-                                               name:NOTIFICATION_UPDATED_STATS_DATA
-                                             object:nil];
-  // start loading data...
+  [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updatedDataNotification) name:NOTIFICATION_CAKES_UPDATED object:nil];
+  // start loading data
   [self updateData];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (void)updatedDataNotification
@@ -57,59 +38,46 @@
 {
   self.data = nil;
   [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
-  
+
   NSError *error;
   NSString *token = [SSKeychain passwordForService:KEYCHAIN_API_TOKEN account:KEYCHAIN_ACCOUNT error:&error];
-  
+
   // load data
   AFHTTPClient *httpClient = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:HOST]];
   [httpClient registerHTTPOperationClass:[AFJSONRequestOperation class]];
   [httpClient setDefaultHeader:@"Accept" value:@"application/json"];
   [httpClient setDefaultHeader:@"Authorization" value:[NSString stringWithFormat:@"Token token=%@", token]];
   [httpClient setParameterEncoding:AFJSONParameterEncoding];
-  
+
   NSMutableURLRequest *request;
   request = [httpClient requestWithMethod:@"GET" path:URL_CAKES parameters:nil];
-  
+
   NSLog(@"GET: %@", request);
-  
-  AFJSONRequestOperation *operation = [AFJSONRequestOperation
-                                       JSONRequestOperationWithRequest:request
-                                       success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON)
-                                       {
-                                         [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
-                                         //NSLog(@"%@", JSON);
-                                         
-                                         if (!self.data)
-                                         {
-                                           self.data = [[NSMutableArray alloc] init];
-                                         }
-                                         
-                                         for (NSDictionary *data in JSON)
-                                         {
-                                           Cake *cake = [Cake initFromJSON:data];
-                                           [self.data addObject:cake];
-                                         }
-                                         
-                                         [[NSNotificationCenter defaultCenter] postNotificationName:NOTIFICATION_UPDATED_STATS_DATA object:nil];
-                                       }
-                                       failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON)
-                                       {
-                                         NSLog(@"Request Failed with Error: %@, %@", error, error.userInfo);
-                                         [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
-                                         [[NSNotificationCenter defaultCenter] postNotificationName:NOTIFICATION_UPDATED_STATS_DATA object:nil];
-                                         
-                                         BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Error" message:@"Failed to retrieve reading data. Please try again later."];
-                                         [alert setCancelButtonWithTitle:@"Ok" block:nil];
-                                         [alert show];
-                                       }];
+
+  AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON) {
+   [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+   if (!self.data)
+   {
+     self.data = [[NSMutableArray alloc] init];
+   }
+   for (NSDictionary *data in JSON)
+   {
+     Cake *cake = [Cake initFromJSON:data];
+     [self.data addObject:cake];
+   }
+   [[NSNotificationCenter defaultCenter] postNotificationName:NOTIFICATION_CAKES_UPDATED object:nil];
+  }
+  failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON) {
+   NSLog(@"Request Failed with Error: %@, %@", error, error.userInfo);
+   [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+   [[NSNotificationCenter defaultCenter] postNotificationName:NOTIFICATION_CAKES_UPDATED object:nil];
+
+   BlockAlertView *alert = [BlockAlertView alertWithTitle:@"Oops..." message:@"Something is broken in the kitchen. Please try again later."];
+   [alert setCancelButtonWithTitle:@"Got it" block:nil];
+   [alert show];
+  }];
   [operation start];
-  
-  
 }
-
-
-
 
 #pragma mark - Table view data source
 
@@ -120,13 +88,9 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-  if (!self.data)
+  if (!self.data || self.data.count == 0)
   {
-    return 0;   // Loading
-  }
-  else if (self.data.count == 0)
-  {
-    return 1;   // no data
+    return 0;
   }
   else
   {
@@ -136,60 +100,22 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-  UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ReadingCell"];
+  UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CakeCell"];
   if (cell == nil)
   {
-    cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"ReadingCell"];
+    cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"CakeCell"];
   }
-  
-  
+
   Cake *cake = [self.data objectAtIndex:indexPath.row];
-  [cell.imageView setImageWithURL:[NSURL URLWithString:cake.photo]
-                 placeholderImage:[UIImage imageNamed:@"placeholder.png"]];
-  
+  [cell.imageView setImageWithURL:[NSURL URLWithString:cake.photo] placeholderImage:[UIImage imageNamed:@"placeholder.png"]];
   cell.textLabel.text = cake.name;
   return cell;
-  
 }
 
-
-// Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Return NO if you do not want the specified item to be editable.
     return NO;
 }
-
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
 
 #pragma mark - Table view delegate
 

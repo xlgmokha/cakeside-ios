@@ -25,13 +25,12 @@
 		CDCB348D1793405E00A25F1E /* cakeside_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCB348C1793405E00A25F1E /* cakeside_iosTests.m */; };
 		CDE67AB0179347D400B4742C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE67AAF179347D400B4742C /* LoginViewController.m */; };
 		CDE67AB2179348EB00B4742C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE67AB1179348EB00B4742C /* Security.framework */; };
-		CDE67AB617934E4200B4742C /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE67AB517934E4200B4742C /* NSString+Additions.m */; };
-		CDE67AC017934E7D00B4742C /* NSDictionary+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE67ABF17934E7D00B4742C /* NSDictionary+Additions.m */; };
 		CDE67AC417935C1C00B4742C /* CreationsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE67AC217935C1C00B4742C /* CreationsTableViewController.m */; };
 		CDE67AC517935C1C00B4742C /* CreationsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDE67AC317935C1C00B4742C /* CreationsTableViewController.xib */; };
 		CDE67ACB179364A600B4742C /* Cake.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE67ACA179364A600B4742C /* Cake.m */; };
 		CDE67AD0179375DA00B4742C /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = CDE67ACF179375DA00B4742C /* placeholder.png */; };
 		CDE67AD21793807800B4742C /* cakeside-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = CDE67AD11793807800B4742C /* cakeside-logo.png */; };
+		CDE67AD81793835E00B4742C /* NSString+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE67AD61793835E00B4742C /* NSString+Extensions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,10 +68,6 @@
 		CDE67AAE179347D400B4742C /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		CDE67AAF179347D400B4742C /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		CDE67AB1179348EB00B4742C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		CDE67AB417934E4200B4742C /* NSString+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Additions.h"; sourceTree = "<group>"; };
-		CDE67AB517934E4200B4742C /* NSString+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Additions.m"; sourceTree = "<group>"; };
-		CDE67ABE17934E7D00B4742C /* NSDictionary+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Additions.h"; sourceTree = "<group>"; };
-		CDE67ABF17934E7D00B4742C /* NSDictionary+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Additions.m"; sourceTree = "<group>"; };
 		CDE67AC117935C1C00B4742C /* CreationsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreationsTableViewController.h; sourceTree = "<group>"; };
 		CDE67AC217935C1C00B4742C /* CreationsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreationsTableViewController.m; sourceTree = "<group>"; };
 		CDE67AC317935C1C00B4742C /* CreationsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CreationsTableViewController.xib; path = ../controllers/CreationsTableViewController.xib; sourceTree = "<group>"; };
@@ -80,6 +75,8 @@
 		CDE67ACA179364A600B4742C /* Cake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cake.m; sourceTree = "<group>"; };
 		CDE67ACF179375DA00B4742C /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
 		CDE67AD11793807800B4742C /* cakeside-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cakeside-logo.png"; sourceTree = "<group>"; };
+		CDE67AD51793835E00B4742C /* NSString+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extensions.h"; sourceTree = "<group>"; };
+		CDE67AD61793835E00B4742C /* NSString+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extensions.m"; sourceTree = "<group>"; };
 		CE65D4B28521438085302B5E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -223,10 +220,8 @@
 		CDE67AB317934E4200B4742C /* utility */ = {
 			isa = PBXGroup;
 			children = (
-				CDE67ABE17934E7D00B4742C /* NSDictionary+Additions.h */,
-				CDE67ABF17934E7D00B4742C /* NSDictionary+Additions.m */,
-				CDE67AB417934E4200B4742C /* NSString+Additions.h */,
-				CDE67AB517934E4200B4742C /* NSString+Additions.m */,
+				CDE67AD51793835E00B4742C /* NSString+Extensions.h */,
+				CDE67AD61793835E00B4742C /* NSString+Extensions.m */,
 			);
 			path = utility;
 			sourceTree = "<group>";
@@ -387,10 +382,9 @@
 				CDCB34681793405E00A25F1E /* main.m in Sources */,
 				CDCB346C1793405E00A25F1E /* AppDelegate.m in Sources */,
 				CDE67AB0179347D400B4742C /* LoginViewController.m in Sources */,
-				CDE67AB617934E4200B4742C /* NSString+Additions.m in Sources */,
-				CDE67AC017934E7D00B4742C /* NSDictionary+Additions.m in Sources */,
 				CDE67AC417935C1C00B4742C /* CreationsTableViewController.m in Sources */,
 				CDE67ACB179364A600B4742C /* Cake.m in Sources */,
+				CDE67AD81793835E00B4742C /* NSString+Extensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

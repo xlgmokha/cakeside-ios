@@ -9,15 +9,15 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
+  [super viewDidLoad];
   UIView *emailPaddingView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 5, 20)];
   self.emailTextBox.leftView = emailPaddingView;
   self.emailTextBox.leftViewMode = UITextFieldViewModeAlways;
-  
+
   UIView *passwordPaddingView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 5, 20)];
   self.passwordTextBox.leftView = passwordPaddingView;
   self.passwordTextBox.leftViewMode = UITextFieldViewModeAlways;
-  
+
   // prepopulate username/password with stored information
   NSError *error;
   NSString *username = [SSKeychain passwordForService:KEYCHAIN_USER_NAME account:KEYCHAIN_ACCOUNT error:&error];
@@ -47,7 +47,6 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark UITextFieldDelegate
@@ -68,7 +67,6 @@
   return YES;
 }
 
-
 - (void)textFieldDidEndEditing:(UITextField *)textField
 {
   [textField resignFirstResponder];
@@ -80,7 +78,6 @@
 }
 
 #pragma mark - Action methods
-
 
 - (IBAction)backgroundTapped:(id)sender
 {
@@ -95,7 +92,7 @@
   self.HUD.customView = nil;
   [self.HUD show:YES];
 
-  // try to login/register...
+  // try to login
   NSDictionary *params = @{@"email": self.emailTextBox.text, @"password": self.passwordTextBox.text};
   AFHTTPClient *httpClient = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:HOST]];
   [httpClient registerHTTPOperationClass:[AFJSONRequestOperation class]];
@@ -109,7 +106,6 @@
      NSLog(@"%@", JSON);
      // check if login was successfull
      NSString *token = [JSON objectForKey:@"auth_token"];
-    NSLog(token);
      if (!token || [token isEmpty])
      {
        [self.HUD hide:YES];
