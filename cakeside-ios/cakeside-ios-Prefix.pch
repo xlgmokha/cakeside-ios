@@ -24,7 +24,7 @@
 #endif
 
 // URLs
-#define HOST        @"http://localhost:3000"
+#define HOST        @"https://www.cakeside.com"
 #define URL_LOGIN   @"/api/v1/logins"
 #define URL_CAKES   @"/api/v1/creations"
 
