@@ -109,6 +109,7 @@
      NSLog(@"%@", JSON);
      // check if login was successfull
      NSString *token = [JSON objectForKey:@"auth_token"];
+    NSLog(token);
      if (!token || [token isEmpty])
      {
        [self.HUD hide:YES];

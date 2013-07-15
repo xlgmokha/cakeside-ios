@@ -31,6 +31,7 @@
 		CDE67AC517935C1C00B4742C /* CreationsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDE67AC317935C1C00B4742C /* CreationsTableViewController.xib */; };
 		CDE67ACB179364A600B4742C /* Cake.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE67ACA179364A600B4742C /* Cake.m */; };
 		CDE67AD0179375DA00B4742C /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = CDE67ACF179375DA00B4742C /* placeholder.png */; };
+		CDE67AD21793807800B4742C /* cakeside-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = CDE67AD11793807800B4742C /* cakeside-logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		CDE67AC9179364A600B4742C /* Cake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cake.h; sourceTree = "<group>"; };
 		CDE67ACA179364A600B4742C /* Cake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cake.m; sourceTree = "<group>"; };
 		CDE67ACF179375DA00B4742C /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		CDE67AD11793807800B4742C /* cakeside-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cakeside-logo.png"; sourceTree = "<group>"; };
 		CE65D4B28521438085302B5E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -110,6 +112,7 @@
 		CDCB344F1793405E00A25F1E = {
 			isa = PBXGroup;
 			children = (
+				CDE67AD11793807800B4742C /* cakeside-logo.png */,
 				CDCB34611793405E00A25F1E /* cakeside-ios */,
 				CDCB34851793405E00A25F1E /* cakeside-iosTests */,
 				CDCB345A1793405E00A25F1E /* Frameworks */,
@@ -316,6 +319,7 @@
 				CDCB34781793405E00A25F1E /* LoginViewController.xib in Resources */,
 				CDE67AC517935C1C00B4742C /* CreationsTableViewController.xib in Resources */,
 				CDE67AD0179375DA00B4742C /* placeholder.png in Resources */,
+				CDE67AD21793807800B4742C /* cakeside-logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
