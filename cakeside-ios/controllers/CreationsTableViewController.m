@@ -33,6 +33,11 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+  
+  [[NSNotificationCenter defaultCenter] addObserver:self
+                                           selector:@selector(updatedDataNotification)
+                                               name:NOTIFICATION_UPDATED_STATS_DATA
+                                             object:nil];
   // start loading data...
   [self updateData];
 }
@@ -41,6 +46,11 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)updatedDataNotification
+{
+  [self.tableView reloadData];
 }
 
 - (void)updateData
@@ -56,7 +66,6 @@
   [httpClient registerHTTPOperationClass:[AFJSONRequestOperation class]];
   [httpClient setDefaultHeader:@"Accept" value:@"application/json"];
   [httpClient setDefaultHeader:@"Authorization" value:[NSString stringWithFormat:@"Token token=%@", token]];
-//  Authorization: Token token=
   [httpClient setParameterEncoding:AFJSONParameterEncoding];
   
   NSMutableURLRequest *request;
@@ -82,7 +91,7 @@
                                            [self.data addObject:cake];
                                          }
                                          
-//                                         [[NSNotificationCenter defaultCenter] postNotificationName:NOTIFICATION_UPDATED_STATS_DATA object:nil];
+                                         [[NSNotificationCenter defaultCenter] postNotificationName:NOTIFICATION_UPDATED_STATS_DATA object:nil];
                                        }
                                        failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON)
                                        {
@@ -106,39 +115,51 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
+  return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+  if (!self.data)
+  {
+    return 0;   // Loading
+  }
+  else if (self.data.count == 0)
+  {
+    return 1;   // no data
+  }
+  else
+  {
+    return self.data.count;
+  }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-    }
-    
-    // Configure the cell...
-    
-    return cell;
+  UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ReadingCell"];
+  if (cell == nil)
+  {
+    cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"ReadingCell"];
+  }
+  
+  
+  Cake *cake = [self.data objectAtIndex:indexPath.row];
+  [cell.imageView setImageWithURL:[NSURL URLWithString:cake.photo]
+                 placeholderImage:[UIImage imageNamed:@"placeholder.png"]];
+  
+  cell.textLabel.text = cake.name;
+  return cell;
+  
 }
 
-/*
+
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Return NO if you do not want the specified item to be editable.
-    return YES;
+    return NO;
 }
-*/
+
 
 /*
 // Override to support editing the table view.

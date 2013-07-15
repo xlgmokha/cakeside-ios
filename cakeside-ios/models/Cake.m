@@ -15,6 +15,7 @@
   Cake *result = [[Cake alloc] init];
   result.id = [[jsonData objectForKey:@"id"] integerValue];
   result.name = [jsonData objectForKey:@"name"];
+  result.photo = [jsonData objectForKey:@"photo"];
   return result;
 }
 

@@ -30,6 +30,7 @@
 		CDE67AC417935C1C00B4742C /* CreationsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE67AC217935C1C00B4742C /* CreationsTableViewController.m */; };
 		CDE67AC517935C1C00B4742C /* CreationsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDE67AC317935C1C00B4742C /* CreationsTableViewController.xib */; };
 		CDE67ACB179364A600B4742C /* Cake.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE67ACA179364A600B4742C /* Cake.m */; };
+		CDE67AD0179375DA00B4742C /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = CDE67ACF179375DA00B4742C /* placeholder.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		CDE67AC317935C1C00B4742C /* CreationsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CreationsTableViewController.xib; path = ../controllers/CreationsTableViewController.xib; sourceTree = "<group>"; };
 		CDE67AC9179364A600B4742C /* Cake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cake.h; sourceTree = "<group>"; };
 		CDE67ACA179364A600B4742C /* Cake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cake.m; sourceTree = "<group>"; };
+		CDE67ACF179375DA00B4742C /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
 		CE65D4B28521438085302B5E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -141,6 +143,7 @@
 		CDCB34611793405E00A25F1E /* cakeside-ios */ = {
 			isa = PBXGroup;
 			children = (
+				CDE67ACE179375DA00B4742C /* assets */,
 				CDE67AB317934E4200B4742C /* utility */,
 				CDE67AAD1793471B00B4742C /* controllers */,
 				CDE67AAC1793471200B4742C /* views */,
@@ -225,6 +228,14 @@
 			path = utility;
 			sourceTree = "<group>";
 		};
+		CDE67ACE179375DA00B4742C /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				CDE67ACF179375DA00B4742C /* placeholder.png */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -304,6 +315,7 @@
 				CDCB34721793405E00A25F1E /* Default-568h@2x.png in Resources */,
 				CDCB34781793405E00A25F1E /* LoginViewController.xib in Resources */,
 				CDE67AC517935C1C00B4742C /* CreationsTableViewController.xib in Resources */,
+				CDE67AD0179375DA00B4742C /* placeholder.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
